@@ -19,6 +19,7 @@ function generateGraph(dates, visits, uniqueVisits) {
     const svgNS = "http://www.w3.org/2000/svg";
     const svg = document.createElementNS(svgNS, "svg");
     svg.setAttribute("viewBox", "0 0 800 500");
+    svg.classList.add("svg");
 
     const min = Math.min(...uniqueVisits);
     const max = Math.max(...visits);
